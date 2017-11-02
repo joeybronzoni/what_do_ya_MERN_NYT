@@ -34,7 +34,7 @@ app.use(express.static('./public'));
 
 
   if(process.env.NODE_ENV == 'production'){
-   mongoose.connect(' mongodb://heroku_n0b2f9cr:5835q8j7ckdr549bfk7gv0msmg@ds135592.mlab.com:35592/heroku_n0b2f9cr');
+   mongoose.connect(herokuUrl);
  } else {
    mongoose.connect(connectionUrl);
  }
